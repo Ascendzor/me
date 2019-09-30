@@ -1,5 +1,6 @@
 body {
   background-image: url('/background.png');
+  font-size: 18px;
 }
 .App {
   text-align: center;

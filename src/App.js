@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Projects from './Projects';
 import Blog from './Blog';
 
-const Home = () => <div>
+const Home = () => <div style={{fontWeight: 500}}>
   <p>
     Hello, my name is Troy.
     In my professional time I build software systems.

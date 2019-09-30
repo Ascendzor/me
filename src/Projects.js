@@ -64,9 +64,10 @@ export default () => {
                 <div style={{textAlign: 'center'}}>
                     <div style={{fontSize: '1.2em', fontWeight: 600}}>{project.title}</div>
                     <Link to={project.source}><div style={{fontSize: '0.8em'}}>{project.source}</div></Link>
+                    <div style={{height: 10}} />
                     <img src={project.image} style={{height: 200}} />
                 </div>
-                <div>{project.content}</div>
+                <div style={{padding: 10}}>{project.content}</div>
             </div>
         })}
     </div>
