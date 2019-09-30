@@ -5,10 +5,9 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Projects from './Projects';
 import Blog from './Blog';
 
-const Home = () => <div style={{fontWeight: 500}}>
+const Home = () => <div style={{fontWeight: 500, borderRadius: 5, backgroundColor: 'white', padding: 10, boxShadow: '5px 5px 20px'}}>
   <p>
-    Hello, my name is Troy.
-    In my professional time I build software systems.
+    Hello, my name is Troy. I solve problems with software systems.
     In my personal time I travel, and explore mathematics.
   </p>
   <ul>

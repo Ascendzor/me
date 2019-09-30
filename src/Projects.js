@@ -60,7 +60,7 @@ export default () => {
     return <div>
         <div style={{marginBottom: 20}}><Link to='/'>Home</Link> / <Link to='/projects'>projects</Link></div>
         {projects.map(project => {
-            return <div style={{backgroundColor: 'white', borderRadius: 5, padding: 5, marginBottom: 10}}>
+            return <div style={{backgroundColor: 'white', borderRadius: 5, padding: 5, marginBottom: 10, boxShadow: '2px 2px 10px'}}>
                 <div style={{textAlign: 'center'}}>
                     <div style={{fontSize: '1.2em', fontWeight: 600}}>{project.title}</div>
                     <Link to={project.source}><div style={{fontSize: '0.8em'}}>{project.source}</div></Link>
