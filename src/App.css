@@ -1,13 +1,33 @@
 body {
-  background-image: url('/background.png');
+  background-image: url('/beach.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-size: 18px;
+  color: white;
+}
+a {
+  color: #ccc;
+}
+a:hover {
+  color: #fff;
 }
 .App {
   text-align: center;
 }
 
+.breadcrumb {
+  color: #333;
+  font-weight: 600;
+}
+.breadcrumb a {
+  color: #555;
+}
+.breadcrumb a:hover {
+  color: #000;
+}
+
 .App-logo {
-  height: 10vmin;
+  height: 60px;
   stroke: #aaa;
   fill: #aaa;
 }

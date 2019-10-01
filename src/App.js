@@ -5,10 +5,16 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Projects from './Projects';
 import Blog from './Blog';
 
-const Home = () => <div style={{fontWeight: 500, borderRadius: 5, backgroundColor: 'white', padding: 10, boxShadow: '5px 5px 20px'}}>
+const Home = () => <div style={{
+  fontWeight: 500,
+  borderRadius: 5,
+  backgroundColor: 'white',
+  padding: '10px 30px',
+  boxShadow: '1px 1px 5px',
+  backgroundImage: 'url(/darkhoneycomb.jpg)'
+}}>
   <p>
-    Hello, my name is Troy. I solve problems with software systems.
-    In my personal time I travel, and explore mathematics.
+    Hello, my name is Troy. I make websites, services, and systems. In my spare time I play with technologies, make prototypes, and travel.
   </p>
   <ul>
     <li>
@@ -31,7 +37,7 @@ function App() {
     <header className="App-header">
       <Link to='/'><img src={logo} className="App-logo" /></Link>
     </header>
-    <div className="App" style={{width: 600, marginLeft: 'auto', marginRight: 'auto', textAlign: 'left'}}>
+    <div className="App" style={{maxWidth: 600, marginLeft: 'auto', marginRight: 'auto', textAlign: 'left'}}>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/projects' component={Projects} />
