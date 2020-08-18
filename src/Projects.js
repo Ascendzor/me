@@ -58,12 +58,12 @@ export default () => {
                         <div style={{width: 50}}>
                             Play
                         </div>
-                        <Link to={project.source}><div style={{display: 'inline-block', fontSize: '0.8em'}}>{project.play}</div></Link>
+                        <a target="_blank" href={project.source}><div style={{display: 'inline-block', fontSize: '0.8em'}}>{project.play}</div></a>
                         <div style={{height: 10}} />
                         <div style={{width: 50}}>
                             Source
                         </div>
-                        <Link to={project.source}><div style={{display: 'inline-block', fontSize: '0.8em'}}>{project.source}</div></Link>
+                        <a target="_blank" href={project.source}><div style={{display: 'inline-block', fontSize: '0.8em'}}>{project.source}</div></a>
                     </div>
                     <div style={{height: 10}} />
                     <img src={project.image} style={{height: 200}} />
