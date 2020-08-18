@@ -1,7 +1,9 @@
-body {
-  background-image: url('/beach.jpg');
+html {
+  background: url(/beach.jpg) no-repeat center fixed; 
+  /* background-image: url('/beach.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  background-size: cover;
   font-size: 18px;
   color: white;
 }

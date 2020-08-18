@@ -3,19 +3,8 @@ import { Link } from "react-router-dom";
 
 const projects = [
     {
-        source: 'https://github.com/Ascendzor/mechanics-administration',
-        title: 'mechanics-administration',
-        image: '/mech.png',
-        content: <div>
-            <p>This project is designed to be a boring fullstack reference implementation using modern technology. It a collection of extremely common tools and patterns such as forms, routing, CRUD, etc.</p>
-            <p>To be used as a reference application, saving time and enrich discussion when considering and comparing technologies.</p>
-            <p>
-                Technologies: aws serverless, nodejs, graphql (server & client), react, antd.
-            </p>
-        </div>
-    },
-    {
         source: 'https://github.com/Ascendzor/mandelbrot-explorer',
+        play: 'https://ascendzor.github.io/mandelbrot-explorer',
         title: 'mandelbrot set explorer',
         image: '/mandelbrot.png',
         content: <div>
@@ -34,6 +23,7 @@ const projects = [
     },
     {
         source: 'https://github.com/Ascendzor/fractal-clock',
+        play: 'https://ascendzor.github.io/fractal-clock',
         title: 'fractal clock',
         image: '/fractalclock.png',
         content: <div>
@@ -45,6 +35,7 @@ const projects = [
     },
     {
         source: 'https://github.com/Ascendzor/pretty-easy-privacy',
+        play: 'https://ascendzor.github.io/pretty-easy-privacy/',
         title: 'pretty easy privacy',
         image: '/prettyeasyprivacy.png',
         content: <div>
@@ -63,7 +54,17 @@ export default () => {
             return <div style={{backgroundColor: 'white', borderRadius: 5, padding: 5, marginBottom: 10, boxShadow: '1px 1px 5px', backgroundImage: 'url(/darkhoneycomb.jpg)'}}>
                 <div style={{textAlign: 'center'}}>
                     <div style={{fontSize: '1.2em', fontWeight: 600}}>{project.title}</div>
-                    <Link to={project.source}><div style={{fontSize: '0.8em'}}>{project.source}</div></Link>
+                    <div style={{width: '100%', textAlign: 'left', paddingLeft: 100}}>
+                        <div style={{width: 50}}>
+                            Play
+                        </div>
+                        <Link to={project.source}><div style={{display: 'inline-block', fontSize: '0.8em'}}>{project.play}</div></Link>
+                        <div style={{height: 10}} />
+                        <div style={{width: 50}}>
+                            Source
+                        </div>
+                        <Link to={project.source}><div style={{display: 'inline-block', fontSize: '0.8em'}}>{project.source}</div></Link>
+                    </div>
                     <div style={{height: 10}} />
                     <img src={project.image} style={{height: 200}} />
                 </div>
