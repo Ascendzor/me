@@ -42,6 +42,10 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path='/projects' component={Projects} />
         <Route path="/blog" component={Blog} />
+        <Route path="/" component={() => {
+          window.location.href = 'https://holisticly-iterate-progressive-sources.s3.amazonaws.com/TroyMareCV.pdf'
+          return null
+        }} />
       </Switch>
     </div>
   </Router></div>
